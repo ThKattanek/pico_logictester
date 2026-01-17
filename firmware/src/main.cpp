@@ -78,8 +78,8 @@ uint32_t last_battery_check = 0;
 uint32_t last_battery_display_update = 0;
 const uint32_t BATTERY_CHECK_INTERVAL = 100; // Check battery every 1/10 seconds
 const uint32_t BATTERY_DISPLAY_UPDATE_INTERVAL = 1000; // Update display every 1 second
-const float BATTERY_LOW_THRESHOLD = 1.0f;     // Low battery warning at 3.0V
-const float BATTERY_CRITICAL_THRESHOLD = 1.0f; // Critical battery at 2.8V
+const float BATTERY_LOW_THRESHOLD = 3.7f;     // Low battery warning at 3.7V
+const float BATTERY_CRITICAL_THRESHOLD = 3.5f; // Critical battery at 3.5V
 const float ADC_CONVERSION_FACTOR = 3.3f / (1 << 12); // 3.3V reference, 12-bit ADC
 const float VOLTAGE_DIVIDER_FACTOR = 2.0f;    // Adjust based on your voltage divider
 
