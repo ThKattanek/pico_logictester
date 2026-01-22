@@ -1,0 +1,104 @@
+
+(rules PCB pico_logictester.dsn
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute off)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.9)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.2)
+    )
+  )
+  (rule
+    (width 200.0)
+    (clearance 200.0)
+    (clearance 100.0 (type smd_to_turn_gap))
+    (clearance 50.0 (type smd))
+    (clearance 200.0 (type "kicad_default"))
+    (clearance 200.0 (type POWER,Default))
+  )
+  (padstack "Via[0-1]_600:300_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_600:300_um" "Via[0-1]_600:300_um" default
+  )
+  (via 
+    "Via[0-1]_600:300_um-kicad_default" "Via[0-1]_600:300_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_600:300_um-POWER,Default" "Via[0-1]_600:300_um" POWER,Default
+  )
+  (via_rule
+    default "Via[0-1]_600:300_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_600:300_um-kicad_default"
+  )
+  (via_rule
+    POWER,Default "Via[0-1]_600:300_um-POWER,Default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "LOGIC_10" "LOGIC_8" "SYSTEM_POWER_PIN" "LOGIC_1" "SENSE_GPIO" "unconnected-(A1-VBUS-Pad40)" "unconnected-(A1-VBUS-Pad40)_1" "LOGIC_11"
+    "LOGIC_0" "LOGIC_14" "BAT_VOLTAGE" "TFT_DC" "unconnected-(A1-3V3_EN-Pad37)" "LOGIC_12" "unconnected-(A1-ADC_VREF-Pad35)" "TFT_CS"
+    "LOGIC_4" "LOGIC_13" "LOGIC_3" "TFT_RST" "TFT_SDIN" "LOGIC_15" "GPIO_5" "TFT_SDCLK"
+    "unconnected-(A1-ADC_VREF-Pad35)_1" "GPIO_28" "LOGIC_6" "LOGIC_2" "unconnected-(A1-RUN-Pad30)" "LOGIC_7" "LOGIC_5" "unconnected-(A1-3V3_EN-Pad37)_1"
+    "LOGIC_9" "unconnected-(A1-RUN-Pad30)_1" "Net-(D2-A)" "Net-(D2-K)" "Net-(D3-K)" "Net-(J1-Pin_11)" /LOGIC9 "Net-(J1-Pin_3)"
+    "Net-(J1-Pin_5)" /LOGIC13 /LOGIC15 /LOGIC11 "Net-(J1-Pin_7)" "Net-(J1-Pin_13)" /LOGIC14 "Net-(J1-Pin_9)"
+    "Net-(J1-Pin_1)" /LOGIC8 /LOGIC12 "Net-(J1-Pin_15)" /LOGIC10 AKKU+ "STEP_UP_IN" "Net-(J6-Pin_1)"
+    "Net-(Q2-B)" "Net-(RN1-R8.2)" "Net-(RN1-R7.2)" "Net-(RN1-R6.2)" "Net-(RN1-R4.2)" "Net-(RN1-R2.2)" "Net-(RN1-R5.2)" "Net-(RN1-R3.2)"
+    "Net-(RN1-R1.2)" "Net-(RN3-R1.2)" "Net-(RN3-R6.2)" "Net-(RN3-R4.2)" "Net-(RN3-R2.2)" "Net-(RN3-R8.2)" "Net-(RN3-R7.2)" "Net-(RN3-R3.2)"
+    "Net-(RN3-R5.2)"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class POWER,Default
+    +3.3V GND +5V
+    (clearance_class POWER,Default)
+    (via_rule POWER,Default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
