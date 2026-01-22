@@ -11919,6 +11919,18 @@
 		(layer "Edge.Cuts")
 		(uuid "984be0af-a719-4e8e-a501-b6ed7bd2979c")
 	)
+	(gr_text "Achtung! Routing noch nicht komplett!"
+		(at 59.8424 68.5038 0)
+		(layer "Edge.Cuts")
+		(uuid "4806f2db-71fc-4925-9b10-3f2b1c90fd3a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
 	(segment
 		(start 92.7882 108.6957)
 		(end 93.3198 109.2273)
