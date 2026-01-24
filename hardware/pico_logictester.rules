@@ -6,9 +6,9 @@
   (autoroute_settings
     (fanout off)
     (autoroute on)
-    (postroute off)
+    (postroute on)
     (vias on)
-    (via_costs 50)
+    (via_costs 100)
     (plane_via_costs 5)
     (start_ripup_costs 100)
     (start_pass_no 1)
@@ -16,13 +16,13 @@
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 3.9)
+      (against_preferred_direction_trace_costs 3.7)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 3.2)
+      (against_preferred_direction_trace_costs 3.3)
     )
   )
   (rule
@@ -80,7 +80,7 @@
     "Net-(J1-Pin_1)" /LOGIC8 /LOGIC12 "Net-(J1-Pin_15)" /LOGIC10 AKKU+ "STEP_UP_IN" "Net-(J6-Pin_1)"
     "Net-(Q2-B)" "Net-(RN1-R8.2)" "Net-(RN1-R7.2)" "Net-(RN1-R6.2)" "Net-(RN1-R4.2)" "Net-(RN1-R2.2)" "Net-(RN1-R5.2)" "Net-(RN1-R3.2)"
     "Net-(RN1-R1.2)" "Net-(RN3-R1.2)" "Net-(RN3-R6.2)" "Net-(RN3-R4.2)" "Net-(RN3-R2.2)" "Net-(RN3-R8.2)" "Net-(RN3-R7.2)" "Net-(RN3-R3.2)"
-    "Net-(RN3-R5.2)"
+    "Net-(RN3-R5.2)" AGND
     (clearance_class "kicad_default")
     (via_rule "kicad_default")
     (rule
