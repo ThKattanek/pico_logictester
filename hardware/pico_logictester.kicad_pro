@@ -514,7 +514,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerber",
       "pos_files": "",
       "specctra_dsn": "pico_logictester.dsn",
       "step": "pico_logictester.step",
