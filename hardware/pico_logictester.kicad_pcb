@@ -3611,7 +3611,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(fp_poly
 			(pts
 				(xy -0.956373 -1.438253) (xy -0.897355 -1.432816) (xy -0.839064 -1.423625) (xy -0.777596 -1.410287)
