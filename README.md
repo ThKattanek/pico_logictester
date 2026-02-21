@@ -127,10 +127,6 @@ picotool load pico_logictester.uf2
 <b>Logic HIGH Signale</b>
 </td>
 <td align="center">
-<img src="doc/images/usage/connection_example.jpg" width="200px"><br>
-<b>Anschlussbeispiel</b>
-</td>
-<td align="center">
 <img src="doc/images/hardware/pcb_top_view.jpg" width="200px"><br>
 <b>PCB Design</b>
 </td>
