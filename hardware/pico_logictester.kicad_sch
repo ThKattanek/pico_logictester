@@ -5954,6 +5954,18 @@
 		)
 		(uuid c132ab54-4a6b-49c6-a1dd-bfd005c8b3ab)
 	)
+	(rectangle
+		(start 68.58 142.875)
+		(end 100.965 147.955)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f869daaf-e62c-4e4a-8459-955a4b0ba694)
+	)
 	(text "Pegelwandlung"
 		(exclude_from_sim no)
 		(at 185.42 16.764 0)
@@ -6033,6 +6045,17 @@
 			)
 		)
 		(uuid "73849254-c563-45f5-a30f-82b4e7939b14")
+	)
+	(text "Die Diode D2 (1N4148) kann in \neiner neuen Version entfallen!"
+		(exclude_from_sim no)
+		(at 69.088 145.796 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e475fbf1-268e-4654-bf2d-819146cb2f93")
 	)
 	(text "Power On / Off"
 		(exclude_from_sim no)
