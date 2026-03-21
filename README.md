@@ -6,6 +6,13 @@
 
 Der Pico Logic Tester ist ein handliches Debugging-Tool für Hardware-Entwickler. Er ersetzt die klassischen Test-LEDs und zeigt bis zu 16 digitale Signale gleichzeitig in Echtzeit auf einem farbigen TFT-Display an.
 
+<div style="text-align: left; margin-left: 0; padding-left: 0;">
+  <img src="doc/images/final/pico_logicteste_with_case_01.jpg" height="350">
+  <img src="doc/images/final/pico_logicteste_with_case_02.jpg" height="350">
+  <img src="doc/images/final/pico_logicteste_with_case_03.jpg" height="350">
+  <img src="doc/images/final/pico_logicteste_with_case_04.jpg" height="350">
+</div>
+
 ![Pico Logic Tester Overview](doc/images/hardware/device_overview.jpg)
 *Der Pico Logic Tester in Aktion*
 
